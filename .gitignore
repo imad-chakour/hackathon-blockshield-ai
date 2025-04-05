@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Large files/binary files
+*.dll
+*.lib
+*.exe
+*.pth
+*.bin
+*.data
+*.h5
+*.pt
+*.pkl
+
+# Monitoring/data files
+monitoring/
+data/
+*.db
+*.sqlite
+
+monitoring/prometheus/*
+!monitoring/prometheus/prometheus.yml
+
+Add-Content -Path .gitignore -Value @"
+
+# Prometheus binaries and data
+monitoring/prometheus/prometheus.exe
+monitoring/prometheus/promtool.exe
+monitoring/prometheus/data/
+monitoring/prometheus/chunks_head/
+
+# Large binary files
+*.dll
+*.lib
+*.exe
+*.pth
+*.bin
+*.data
+*.h5
+*.pt
+*.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+"@
