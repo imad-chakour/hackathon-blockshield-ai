@@ -9,17 +9,23 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem
+          <CardItem
+              id={1}
               src='images/blockchain-secure.jpg'
-              text='Immutable report storage on Ethereum blockchain'
+              backImage='images/blockchain-fig9-JZDddNw.png'
+              text='Immutable Storage'
               label='Security'
               path='/upload'
+              description='All reports cryptographically sealed on Ethereum with timestamp proof.'
             />
             <CardItem
+              id={2}
               src='images/blockchain-verify.jpg'
-              text='Instant verification of threat authenticity'
+              backImage='images/blockchain-verify-details.jpg'
+              text='Instant Verification'
               label='Verification'
               path='/verify'
+              description='Verify authenticity in seconds using blockchain transaction hashes.'
             />
           </ul>
           <ul className='cards__items'>
